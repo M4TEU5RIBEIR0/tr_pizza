@@ -1,0 +1,92 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <!--Declarando a biblioteca do bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Link do google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--link da fonte escolhida-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<style>
+	body{
+		/*plano de fundo*/
+		
+		background-image: url(img/fundo_definitivo.png); 
+
+	}
+
+
+	.titulo{
+		/*estilo do titulo*/
+		font-family: 'Dancing Script', cursive;
+		color: red;
+		/*essa tag deixa o título responsivo*/
+		font-size: 10vw;
+	}
+	/* tornando as imagens do carrossel responsivas */
+  .carousel-inner img {
+    display:block;
+    margin: 0 auto;
+    width: 70%;
+
+  }
+
+
+</style>
+
+<body>
+	<!--essa é a navbar-->
+	<nav class="navbar navbar-expand-sm bg-danger navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="login.html">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="inscrição.html">Cadastre-se</a>
+    </li>
+    
+  </ul>
+</nav>
+	
+	<div class="titulo">
+	<!--titulo do site-->	
+		<center>Mamamia Pizzas</center>
+	</div>
+	
+	<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- indicadores -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- imagens do carrossel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/pizza.png" alt="pizza_um" width="1100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/pizza_um.png" alt="pizza_dois" width="1100">
+    </div>
+    <div class="carousel-item">
+      <img src="img/pizza_dois.png" alt="pizza_tres" width="1100">
+    </div>
+  </div>
+  
+  <!-- botões de direita e esqerda -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</body>	
+</html>
