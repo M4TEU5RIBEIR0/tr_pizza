@@ -1,0 +1,69 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <!--Declarando a biblioteca do bootstrap-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Link do google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--link da fonte escolhida-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<style>
+	body{
+		/*plano de fundo*/
+		background-image: url(img/fundo_definitivo.png)
+	}
+	.titulo{
+		/*estilo do titulo*/
+		display:flex;
+		justify-content: center;
+		font-family: 'Dancing Script', cursive;
+		color: red;
+
+	}
+
+  .form-group{
+    color: white;
+
+  }
+</style>
+<body>
+	<!--esse é o formulário de login-->
+	<div class="titulo">
+		<h2><center>Ainda não fez seu cadastro?<br>Faça sua inscrição para desfrutar de varias delicias!</center></h2>
+	</div>
+  <form>
+  
+    <div class="form-group">
+      <label for="email">Nome:</label><br>
+      <input type="text" id="fname" name="fname" placeholder="Qual o seu nome?"><br>
+      <label for="birthday">Data de nascimento:</label><br>
+  <input type="date" id="birthday" name="birthday">
+    </div>
+    
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Senha:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Definir senha" name="pswd">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Confirme sua Senha:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Confirmar senha" name="pswd">
+    </div>
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"> Lembrar Senha
+      </label>
+    </div> 
+    <a href="cardapio.html" button type="submit" class="btn btn-primary">Logar</a></button>
+  </form>
+</div>
+</body>	
+</html>
